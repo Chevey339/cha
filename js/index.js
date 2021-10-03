@@ -2,7 +2,7 @@ let web_list = [{ "kind": "web_8", "title": "\u634f\u8138", "href": "https://pic
 
 // 渲染所有网站卡片
 let i = 0;
-let web_list_html = `<div class="col-md-4 web-grid web_8 is_star" data-toggle="modal" data-target="#exampleModal"><a href="javascript:0" target="_self"><div data-toggle="popover" data-content="良心到难以置信的网站推荐" class="services-inner-box web-single clearfix" ontouchstart=""><span class="star iconfont">&#xe639;</span><h2>LKs网页推荐站</h2><p>实用</p></div></a></div>`;
+let web_list_html = `<div class="col-md-4 web-grid web_8 is_star" data-toggle="modal" data-target="#exampleModal"><a href="javascript:0" target="_self"><div data-toggle="popover" data-content="CHACHAdamow" class="services-inner-box web-single clearfix" ontouchstart=""><span class="star iconfont">&#xe639;</span><h2>茶茶大魔王</h2><p>茶茶</p></div></a></div>`;
 for (i in web_list) {
   web_list_html += `<div class="col-md-4 web-grid ${web_list[i].kind} is_${web_list[i].star}"><a href="${web_list[i].href}" target="_blank"><div data-toggle="popover" data-content="${web_list[i].slogan}" class="services-inner-box web-single clearfix" ontouchstart=""><span class="${web_list[i].star} iconfont">&#xe639;</span><h2>${web_list[i].title}</h2><p>${web_list[i].kind_name}</p></div></a></div>`
 }
